@@ -3,8 +3,9 @@ version: "3"
 services:
   backend:
     build: ./MyWebApp/
+    image: dotnet_2
     ports:
-      - "5000:5000"
+      - "5042:5042"
 #   influxdb:
 #     image: influxdb:2.1.1
 #     volumes:
