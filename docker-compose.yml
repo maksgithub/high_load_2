@@ -4,6 +4,8 @@ services:
   backend:
     build: ./aspnetapp/
     image: aspnetcore_sample
+    volumes:
+      - grafana-storage:/var/lib/grafana:rw
     ports:
       - "5000:80"
 
@@ -39,3 +41,4 @@ services:
 volumes:
   grafana-storage:
   influxdb-storage:
+  backend-storage:
