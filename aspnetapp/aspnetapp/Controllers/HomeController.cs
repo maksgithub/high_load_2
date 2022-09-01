@@ -16,7 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        _logger.LogInformation("HomeController.Index method called!!!");
+        _logger.LogInformation("index_loaded=1");
         return View();
     }
 
