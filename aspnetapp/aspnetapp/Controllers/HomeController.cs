@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using aspnetapp.Models;
+using NLog;
 
 namespace aspnetapp.Controllers;
 
@@ -15,7 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        _logger.LogInformation("Hello from HomeController");
+        _logger.LogInformation("HomeController.Index method called!!!");
         return View();
     }
 
